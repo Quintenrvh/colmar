@@ -1,154 +1,325 @@
-div {
-  border: 1px solid blue;
+
+
+body {
+  line-height: 1.4;
 }
 
+html {
+  font-family: 'arimo', sans-serif;
+}
 
+#header{
+ height: 64px;
+}
 
-header nav{
+header nav {
   display: flex;
   margin: 0px auto;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
   height: 64px;
+  align-items: center;
 }
+ header img {
+   height: 64px;
+   padding-left: 24px;
+ }
 
-header img {
-  height: 32px;
-  margin-left: 24px;
-}
+ #headertitle {
+   font-size: 32px;
+ }
 
-#headertitle {
-  margin-right: 800px;
-}
+ #headerright {
+   padding-right: 24px;
+   font-size: 16px;
+   margin-left: 565px;
+   opacity: 0.7;
+ }
 
-#headerright {
- padding-right: 16px;
- margin-right: 24px;
-}
+ #headerright span {
+   padding-right: 16px;
+ }
 
 #jumbotron {
- background-color: #DBDDDE;
- display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  background-color: #e7e7e7;
 }
 
 #jumbotron img {
   width: 60%;
-  margin: 32px 24px;
-  height: 500px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 40%;
 }
 
 #jumbotrontext {
-  margin-right: 200px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  text-align: center;
+  width: 40%;
+  margin-right: 24px;
+  margin-top: 40px;
 }
 
 #jumbotron h2 {
- font-size: 32px;
+  font-size: 54px;
+  opacity: 0.7;
 }
+
+#jumbotron p {
+  font-size: 22px;
+  opacity: 0.7;
+}
+
+#jumbotronbutton {
+  text-align: center;
+  padding: 8px 0px;
+  margin-top: 50px;
+  font-size: 27px;
+  background-color: #14191C;
+  margin-right: 45px;
+  opacity: 0.7;
+}
+
+  #jumbotronbutton span{
+    color: white;
+  }
 
 #firstsection {
- display: flex;
- flex-wrap: wrap;
-}
-
-#infosection img {
-  max-width: 100%;
-
+  display: flex;
 }
 
 #infosection {
-  max-width: 60%;
-  text-align: left;
-  margin: 32px 24px;
+  width: 60%;
+  padding: 32px 24px;
+}
+
+#infosection img{
+  width: 100%;
+  height: 60%;
+}
+
+#infosection h2{
+  margin-bottom: 24px;
+  font-size: 45px;
+  opacity: 0.7;
+}
+
+#infosection p {
+  font-size: 16px;
+  opacity: 0.7;
 }
 
 #agenda {
-  max-width: 40%;
-  flex-wrap: wrap;
+  width: 35%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 100%;
+  border-left: solid 1px lightgrey;
+  margin: 0px auto;
 }
 
 .agendarows {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
-}
-
-.agendarows img {
-  max-width: 35%
+  padding: 16px 16px;
 }
 
 .agendatext {
-  max-width: 65%
+  width: 65%;
+  padding-left: 16px;
+  font-size: 16px;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+#orientation{
+  display: flex;
+}
+
+#orientationimg {
+  width: 35%;
+}
+
+#orientation img {
+  width: 100%;
+  height: 100%;
+}
+
+#campus {
+  display: flex;
+}
+
+#campusimg {
+  width: 35%;
+}
+
+#campus img {
+  width: 100%;
+  height: 100%;
+}
+
+#guest {
+  display: flex;
+  background-color: #e7e7e7;
+}
+
+#guestimg {
+  width: 35%
+}
+
+#guest img {
+  width: 100%;
+  height: 100%;
+}
+
+#agenda a{
+  text-decoration: none;
 }
 
 #courses {
-  background-color: #DBDDDE;
+  background-color: #e7e7e7;
   padding-left: 72px;
   padding-right: 72px;
-  max-width: 100%
-}
-
-.coursesbox {
-  display: inline-flex;
-  position: relative;
-  padding: 32px 32px;
-  flex-direction: column;
-  max-width: 25%;
-  justify-content: space-around;
-}
-
-.coursesbox img {
-  height: auto;
-  margin: 0px auto;
-  max-width: 100%
 }
 
 #courses h2 {
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0px;
+  font-size: 45px;
+  opacity: 0.7;
 }
 
-#thesis {
- max-width: 60%;
+#maincourses {
+ background-color: #e7e7e7;
+ justify-content: center;
+}
+
+.coursesbox {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-around;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.coursesbox img {
+  width: 100%;
+  height: 100%;
+  padding: 0px auto;
+}
+
+.coursestext {
+  background-color: white;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+  opacity: 0.7;
+
+}
+
+.coursestext h4 {
+  font-size: 24px;
+}
+
+.coursestext span {
+  padding: 8px 0px;
+}
+
+.coursestext p {
+  font-size: 15.5px;
 }
 
 #thesissection {
 
 }
 
-#thesisunder {
-  display: flex;
+#thesistitle {
+  padding: 32px 0px;
+  text-align: center;
+  font-size: 32px;
+  opacity: 0.7;
+}
+
+#thesis {
+  width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
 }
 
 #thesis video {
   width: 100%;
+  background-color: #e7e7e7;
+  height: 450px;
+  border: 2px solid lightgrey;
+}
 
+.thesistext h3 {
+  font-size: 20px;
+  padding-bottom: 8px;
 }
 
 .thesistext {
-  width: 100%
-}
-
-#thesistitle {
-  text-align: center;
-  padding-top: 32px;
-  width: 100%
+  padding-bottom: 32px;
+  opacity: 0.7;
 }
 
 #thesisextra {
- width: 40%;
-
+  width: 40%;
 }
 
-#thesisextra img{
+.thesisbox {
+  display: flex;
+  padding: 16px 16px;
+  height: 180px;
+}
+
+#thesisunder {
+  display: flex;
+}
+
+.extraimage {
   width: 35%;
 }
 
-#footer {
+.thesisbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.extratext {
+  width: 65%;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  opacity: 0.7;
+}
+
+.extratext h4 {
+  font-size: 23px;
+}
+
+#fisma {
+  background-color: #e7e7e7;
+}
+
+#nowandthen .extratext {
+  margin-top: 10px;
+}
+
+footer {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-top:  solid 1px lightgrey;
   display: flex;
-  justify-content: center;
+}
+
+#footerleft {
+  width: 30%;
+  opacity: 0.7;
+}
+
+#footerright {
+  margin-left: 750px;
+  opacity: 0.7;
 }
